@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    font-family: averta,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#hero{
+    height: 800px;
+    background-image: url(./images/hero-bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#zuri-full-lg{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 69px;
+    margin-bottom: 69px;
+}
+
+#hero-content{
+    padding: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.highlight{
+    color: #e7332b;
+}
+
+.hero-btn1{
+    width: 220px;
+    height: 45px;
+    color: white;
+    background-color: #e7332b;
+    border: solid 1px #e7332b;
+    cursor: pointer;
+    margin-right: 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.hero-btn1:hover{
+    background-color: white;
+    color: #e7332b;
+}
+
+.hero-btn2{
+    width: 250px;
+    height: 45px;
+    color: #e7332b;
+    background-color: white;
+    border: solid 1px #e7332b;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.hero-btn2:hover{
+    background-color: #e7332b;
+    color: white;
+}
+
+/*Programs section*/
+#programs{
+    position: relative;
+}
+
+#heading{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 150px;
+    text-align: center;
+    color: #e7332b;
+    line-height: 24px;
+}
+
+#slogan{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#left-dots{
+    width: 350px;
+}
+
+#right-dots{
+    width: 350px;
+    float: right;
+    z-index: -1;
+}
+
+#all-programs{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    position: absolute;
+    top: 165px;
+    left: 5%;
+    right: 5%;
+
+}
+
+.zuri-program{
+    z-index: 1;
+    background-color: #fffafa;
+    width: 100%;
+    height: 500px;
+    padding: 61px 45px 82px 36px;
+}
+
+#zuri-training{
+    margin-right: 30px;
+}
+
+#zuri-internship{
+    margin-right: 30px;
+}
+
+.zuri-logo{
+    margin-bottom: 48px;
+    vertical-align: middle;
+}
+
+.programs-content{
+    font-size: 16px;
+    line-height: 24px;
+    color: #514949;
+    opacity: 0.9;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.program-links{
+    color: #eb554f;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*Footer*/
+#footer{
+    position: relative;
+    margin-top: 350px;
+    justify-content: space-between;
+    display: flex;
+    padding: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#social-icons{
+    display: flex;
+    margin-top: 10px;
+}
+
+.ftr-links{
+    color: #e7332b;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.ftr-header{
+    font-size: 16px;
+    line-height: 24px;
+    color: #514949;
+    font-weight: 700;
+}
+
+#zuri-mail{
+    color: #e7332b;
+    margin-top: 20px;
+}
+
+.social-ic{
+    width: 20px;
+    margin-right: 7px;
+}
+
+#address{
+    width: 220px;
+}
+
+#hr-line{
+    color: #212529;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#copyright{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #514949;
+}
+
+@media(max-width:1050px){
+   .program-links{
+    font-size: 0.95rem;
+   }
+
+   .zuri-program{
+    height: 550px;
+    padding: 61px 45px 82px 36px;
+    }
+
+    #dots{
+        display: none;
+    }
+
+    #all-programs{
+        display: relative;
+    }
+
+    #footer{
+        margin-top: 800px;
+    }
+}
+
+@media(max-width:800px){
+    #hero{
+        height: 600px;
+    }
+
+    #hero-btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-btn1{
+        margin-left: 20px;
+    }
+
+    .hero-btn2{
+        margin-top: 2%;
+    }
+
+    #dots{
+        display: none;
+    }
+
+    #all-programs{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0 auto;
+        top: 100px;
+        left: 0;
+        right: 0;
+    
+    }
+
+    .zuri-program{
+        height: 100%;
+    }
+    
+    #zuri-internship{
+        margin-right: 30px;
+        margin-top: 45px;
+    }
+
+    #zuri-talent{
+        margin-top: 45px;
+    }
+    
+    /*Footer*/
+    #footer{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .ftr-links{
+        line-height: 30px;
+    }
+    
+    .ftr-header{
+        margin-top: 20px;
+        font-size: 23px;
+    }
+ }
+
+ @media(max-width:500px){
+    .hero-btn2{
+        margin-top: 3%;
+    }
+
+    #hero{
+        height: 650px;
+    }
+
+    .ftr-header{
+        display: flex;
+        justify-content: center;
+    }
+
+    #flex2{
+        text-align: center;
+    }
+
+    #flex3{
+        text-align: center;
+    }
+}
+
+ @media(min-width:1500px){
+    #dots{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    #all-programs{
+        width: 40%;
+    }
+    
+    .zuri-program{
+        z-index: 1;
+        background-color: #fffafa;
+        width: 100%;
+        height: 100%;
+        padding: 61px 45px 82px 36px;
+    }
+
+    #footer{
+        width: 40%;
+    }
+
+    #hr-line{
+        width: 40%;
+    }
+ }
+
