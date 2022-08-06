@@ -5,6 +5,11 @@
     text-decoration: none;
 }
 
+@font-face {
+    font-family: Averta;
+    src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+}
+
 body{
     font-size: 1rem;
     font-weight: 400;
@@ -30,15 +35,22 @@ body{
     margin-bottom: 69px;
 }
 
+#hero-header{
+    color: #514949;
+    font-size: 2rem;
+}
+
 #hero-content{
     padding: 10px;
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    color: #7b7474;
 }
 
 .highlight{
     color: #e7332b;
+    opacity: 0.9;
 }
 
 .hero-btn1{
@@ -100,12 +112,14 @@ body{
 
 #left-dots{
     width: 350px;
+    margin-top: -15px;
 }
 
 #right-dots{
     width: 350px;
     float: right;
     z-index: -1;
+    margin-top: -15px;
 }
 
 #all-programs{
@@ -297,6 +311,7 @@ body{
         align-items: center;
         display: flex;
         flex-direction: column;
+        margin-top: 300px;
 
     }
     
